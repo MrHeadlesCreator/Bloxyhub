@@ -1,18 +1,305 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+-- (Bubble Simulator)
+if _G.Key == "FreeKeyDog" then
+	local BubbleSimulator = Instance.new("ScreenGui")
+	local MainFrameWorkBuildFrame = Instance.new("Frame")
+	local MenuHold = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Main_Type = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	local MISC_Type = Instance.new("TextButton")
+	local UICorner_3 = Instance.new("UICorner")
+	local Discord = Instance.new("TextLabel")
+	local UICorner_4 = Instance.new("UICorner")
+	local UICorner_5 = Instance.new("UICorner")
+	local TitlFrame = Instance.new("Frame")
+	local UICorner_6 = Instance.new("UICorner")
+	local Random_Nummber = Instance.new("TextButton")
+	local UICorner_7 = Instance.new("UICorner")
+	local UserName_GameName = Instance.new("TextLabel")
+	local MainFrame = Instance.new("Frame")
+	local UICorner_8 = Instance.new("UICorner")
+	local AutoFarm = Instance.new("TextButton")
+	local UICorner_9 = Instance.new("UICorner")
+	local ClosePrompt = Instance.new("TextButton")
+	local UICorner_10 = Instance.new("UICorner")
+	local MiscFrame = Instance.new("Frame")
+	local UICorner_11 = Instance.new("UICorner")
+	local AutoJumper = Instance.new("TextButton")
+	local UICorner_12 = Instance.new("UICorner")
 
-# Other files and folders
-.settings/
+	--Properties:
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+	BubbleSimulator.Name = "BubbleSimulator"
+	BubbleSimulator.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	BubbleSimulator.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+	MainFrameWorkBuildFrame.Name = "MainFrameWorkBuildFrame"
+	MainFrameWorkBuildFrame.Parent = BubbleSimulator
+	MainFrameWorkBuildFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	MainFrameWorkBuildFrame.Position = UDim2.new(0.355208337, 0, 0.439135373, 0)
+	MainFrameWorkBuildFrame.Size = UDim2.new(0, 641, 0, 362)
+
+	MenuHold.Name = "MenuHold"
+	MenuHold.Parent = MainFrameWorkBuildFrame
+	MenuHold.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	MenuHold.Position = UDim2.new(0.0140405614, 0, 0.143646404, 0)
+	MenuHold.Size = UDim2.new(0, 203, 0, 301)
+
+	UICorner.CornerRadius = UDim.new(0, 4)
+	UICorner.Parent = MenuHold
+
+	Main_Type.Name = "Main_Type"
+	Main_Type.Parent = MenuHold
+	Main_Type.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+	Main_Type.Position = UDim2.new(0.024630541, 0, 0.0232558139, 0)
+	Main_Type.Size = UDim2.new(0, 192, 0, 50)
+	Main_Type.AutoButtonColor = false
+	Main_Type.Font = Enum.Font.SourceSansLight
+	Main_Type.Text = "MAIN"
+	Main_Type.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Main_Type.TextScaled = true
+	Main_Type.TextSize = 14.000
+	Main_Type.TextWrapped = true
+
+	UICorner_2.CornerRadius = UDim.new(0, 2)
+	UICorner_2.Parent = Main_Type
+
+	MISC_Type.Name = "MISC_Type"
+	MISC_Type.Parent = MenuHold
+	MISC_Type.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+	MISC_Type.Position = UDim2.new(0.024630541, 0, 0.209302321, 0)
+	MISC_Type.Size = UDim2.new(0, 192, 0, 50)
+	MISC_Type.AutoButtonColor = false
+	MISC_Type.Font = Enum.Font.SourceSansLight
+	MISC_Type.Text = "MISC"
+	MISC_Type.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MISC_Type.TextScaled = true
+	MISC_Type.TextSize = 14.000
+	MISC_Type.TextWrapped = true
+
+	UICorner_3.CornerRadius = UDim.new(0, 2)
+	UICorner_3.Parent = MISC_Type
+
+	Discord.Name = "Discord"
+	Discord.Parent = MenuHold
+	Discord.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+	Discord.Position = UDim2.new(0.024630541, 0, 0.395348817, 0)
+	Discord.Size = UDim2.new(0, 192, 0, 33)
+	Discord.Font = Enum.Font.SourceSansLight
+	Discord.Text = "Discord.gg"
+	Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Discord.TextScaled = true
+	Discord.TextSize = 14.000
+	Discord.TextWrapped = true
+
+	UICorner_4.CornerRadius = UDim.new(0, 2)
+	UICorner_4.Parent = Discord
+
+	UICorner_5.Parent = MainFrameWorkBuildFrame
+
+	TitlFrame.Name = "TitlFrame"
+	TitlFrame.Parent = MainFrameWorkBuildFrame
+	TitlFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	TitlFrame.Position = UDim2.new(0.0140405614, 0, 0.0220994484, 0)
+	TitlFrame.Size = UDim2.new(0, 386, 0, 38)
+
+	UICorner_6.CornerRadius = UDim.new(0, 2)
+	UICorner_6.Parent = TitlFrame
+
+	Random_Nummber.Name = "Random_Nummber"
+	Random_Nummber.Parent = TitlFrame
+	Random_Nummber.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	Random_Nummber.Position = UDim2.new(1.01923394, 0, -0.0120741427, 0)
+	Random_Nummber.Size = UDim2.new(0, 183, 0, 38)
+	Random_Nummber.Font = Enum.Font.SourceSansLight
+	Random_Nummber.Text = "{Lua.Org}"
+	Random_Nummber.TextColor3 = Color3.fromRGB(255, 200, 0)
+	Random_Nummber.TextScaled = true
+	Random_Nummber.TextSize = 14.000
+	Random_Nummber.TextWrapped = true
+
+	UICorner_7.CornerRadius = UDim.new(0, 2)
+	UICorner_7.Parent = Random_Nummber
+
+	UserName_GameName.Name = "UserName_GameName"
+	UserName_GameName.Parent = TitlFrame
+	UserName_GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UserName_GameName.BackgroundTransparency = 1.000
+	UserName_GameName.Size = UDim2.new(0, 387, 0, 38)
+	UserName_GameName.Font = Enum.Font.Code
+	UserName_GameName.Text = "Username > HubName"
+	UserName_GameName.TextColor3 = Color3.fromRGB(255, 106, 0)
+	UserName_GameName.TextScaled = true
+	UserName_GameName.TextSize = 14.000
+	UserName_GameName.TextWrapped = true
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = MainFrameWorkBuildFrame
+	MainFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	MainFrame.Position = UDim2.new(0.341653675, 0, 0.143646404, 0)
+	MainFrame.Size = UDim2.new(0, 411, 0, 301)
+
+	UICorner_8.CornerRadius = UDim.new(0, 4)
+	UICorner_8.Parent = MainFrame
+
+	AutoFarm.Name = "AutoFarm"
+	AutoFarm.Parent = MainFrame
+	AutoFarm.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+	AutoFarm.Position = UDim2.new(0.0111719584, 0, 0.0232558139, 0)
+	AutoFarm.Size = UDim2.new(0, 401, 0, 50)
+	AutoFarm.AutoButtonColor = false
+	AutoFarm.Font = Enum.Font.SourceSansLight
+	AutoFarm.Text = "AUTO - FARM"
+	AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoFarm.TextScaled = true
+	AutoFarm.TextSize = 14.000
+	AutoFarm.TextWrapped = true
+
+	UICorner_9.CornerRadius = UDim.new(0, 4)
+	UICorner_9.Parent = AutoFarm
+
+	ClosePrompt.Name = "ClosePrompt"
+	ClosePrompt.Parent = MainFrameWorkBuildFrame
+	ClosePrompt.BackgroundColor3 = Color3.fromRGB(255, 102, 102)
+	ClosePrompt.BorderSizePixel = 0
+	ClosePrompt.Position = UDim2.new(0.939157546, 0, 0.0220994484, 0)
+	ClosePrompt.Size = UDim2.new(0, 28, 0, 25)
+	ClosePrompt.AutoButtonColor = false
+	ClosePrompt.Font = Enum.Font.RobotoMono
+	ClosePrompt.Text = "X"
+	ClosePrompt.TextColor3 = Color3.fromRGB(255, 102, 102)
+	ClosePrompt.TextScaled = true
+	ClosePrompt.TextSize = 14.000
+	ClosePrompt.TextWrapped = true
+
+	UICorner_10.CornerRadius = UDim.new(0, 4)
+	UICorner_10.Parent = ClosePrompt
+
+	MiscFrame.Name = "MiscFrame"
+	MiscFrame.Parent = MainFrameWorkBuildFrame
+	MiscFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	MiscFrame.Position = UDim2.new(0.341653675, 0, 0.143646404, 0)
+	MiscFrame.Size = UDim2.new(0, 411, 0, 301)
+	MiscFrame.Visible = false
+
+	UICorner_11.CornerRadius = UDim.new(0, 4)
+	UICorner_11.Parent = MiscFrame
+
+	AutoJumper.Name = "AutoJumper"
+	AutoJumper.Parent = MiscFrame
+	AutoJumper.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+	AutoJumper.Position = UDim2.new(0.028203588, 0, 0.0267109927, 0)
+	AutoJumper.Size = UDim2.new(0, 387, 0, 54)
+	AutoJumper.Font = Enum.Font.SourceSansLight
+	AutoJumper.Text = "{Anti - Kick - Addon}"
+	AutoJumper.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoJumper.TextScaled = true
+	AutoJumper.TextSize = 14.000
+	AutoJumper.TextWrapped = true
+
+	UICorner_12.CornerRadius = UDim.new(0, 4)
+	UICorner_12.Parent = AutoJumper
+
+	-- Scripts:
+
+	local function WAFPOOM_fake_script() -- Main_Type.function 
+		local script = Instance.new('LocalScript', Main_Type)
+
+		script.Parent.Parent.Main_Type.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Parent.MiscFrame.Visible = false
+			script.Parent.Parent.Parent.MainFrame.Visible = true
+		end)
+	end
+	coroutine.wrap(WAFPOOM_fake_script)()
+	local function RNVFX_fake_script() -- MISC_Type.function 
+		local script = Instance.new('LocalScript', MISC_Type)
+
+		script.Parent.Parent.MISC_Type.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Parent.MiscFrame.Visible = true
+			script.Parent.Parent.Parent.MainFrame.Visible = false
+		end)
+	end
+	coroutine.wrap(RNVFX_fake_script)()
+	local function SYVHPY_fake_script() -- Discord.function 
+		local script = Instance.new('LocalScript', Discord)
+
+		script.Parent.Text = "Discord.gg/aKqencMNWa"
+	end
+	coroutine.wrap(SYVHPY_fake_script)()
+	local function YOIVSEH_fake_script() -- Random_Nummber.function 
+		local script = Instance.new('LocalScript', Random_Nummber)
+
+		while true do
+			wait(.1)
+			script.Parent.Text = game.Workspace.Name
+			wait(.1)
+			script.Parent.Text = game.Players.Name
+			wait(.1)
+			script.Parent.Text = game.ReplicatedStorage.Name
+			wait(.1)
+			script.Parent.Text = game.ServerScriptService.Name
+		end
+	end
+	coroutine.wrap(YOIVSEH_fake_script)()
+	local function BLRT_fake_script() -- UserName_GameName.function 
+		local script = Instance.new('LocalScript', UserName_GameName)
+
+		local PlrName = game.Players.LocalPlayer.Name
+		script.Parent.Text = PlrName.." > ".."Roblox Hub"
+	end
+	coroutine.wrap(BLRT_fake_script)()
+	local function DETIM_fake_script() -- AutoFarm.function 
+		local script = Instance.new('LocalScript', AutoFarm)
+
+		script.Parent.Parent.AutoFarm.MouseButton1Down:Connect(function()
+			while wait() do
+				game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer("BlowBubble");
+			end
+		end)
+	end
+	coroutine.wrap(DETIM_fake_script)()
+	local function VKBUAFR_fake_script() -- ClosePrompt.function 
+		local script = Instance.new('LocalScript', ClosePrompt)
+
+		script.Parent.Parent.ClosePrompt.MouseButton1Down:Connect(function()
+			script.Parent.Parent.Parent.MainFrameWorkBuildFrame:Destroy()
+		end)
+		script.Parent.Parent.ClosePrompt.MouseEnter:Connect(function()
+			script.Parent.Parent.ClosePrompt.TextColor3 = Color3.new(1, 1, 1)
+		end)
+		script.Parent.Parent.ClosePrompt.MouseLeave:Connect(function()
+			script.Parent.Parent.ClosePrompt.TextColor3 = Color3.new(1, 0.4, 0.4)
+		end)
+	end
+	coroutine.wrap(VKBUAFR_fake_script)()
+	local function KNEYHAE_fake_script() -- AutoJumper.function 
+		local script = Instance.new('LocalScript', AutoJumper)
+
+		script.Parent.Parent.AutoJumper.MouseButton1Down:Connect(function()
+			script.Parent.Parent.AutoJumper.Active = false
+			loadstring(game:HttpGet("https://pastebin.com/raw/Jp4VKDBX"))()
+		end)
+	end
+	coroutine.wrap(KNEYHAE_fake_script)()
+	local function CCSXJI_fake_script() -- MainFrameWorkBuildFrame.Settings 
+		local script = Instance.new('LocalScript', MainFrameWorkBuildFrame)
+
+		local MainFrame = script.Parent.Parent.MainFrameWorkBuildFrame
+		MainFrame.Active = true
+		MainFrame.Draggable = true
+	end
+	coroutine.wrap(CCSXJI_fake_script)()
+	local function TVPB_fake_script() -- BubbleSimulator.Configure 
+		local script = Instance.new('LocalScript', BubbleSimulator)
+
+		local PlrName = game.Players.LocalPlayer.Name
+		if PlrName == "IIROBLOX2000" then
+			script.Parent.MainFrameWorkBuildFrame.Visible = true
+		else
+			script.Parent.MainFrameWorkBuildFrame:Destroy()
+		end
+	end
+	coroutine.wrap(TVPB_fake_script)()
+else
+	print("Get the key right dog")
+end
